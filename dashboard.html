@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junior's Help Desk</title><link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="#home"><span class="brand-logo">U</span><span>Junior's Help Desk</span></a>
+<nav><a href="#home">Home</a><a href="#finder">Find My Class</a><a href="#building">Building Guide</a><a href="#places">Important Places</a><a href="#about">About</a><a href="#makers">Makers</a></nav>
+<button id="logout" class="ghost">Logout</button></header>
+
+<main>
+<section id="home" class="hero section">
+  <div><span class="badge">WELCOME TO JUNIOR'S HELP DESK</span><h1>Hello, <span id="studentName">Junior</span> 👋</h1>
+  <p class="lead">Your first day should be about discovering your university, not getting lost in it.</p>
+  <div class="profile"><div><small>NAME</small><strong id="profileName"></strong></div><div><small>MOBILE</small><strong id="profileMobile"></strong></div><div><small>BRANCH</small><strong id="profileBranch"></strong></div><div><small>SECTION</small><strong id="profileSection"></strong></div></div></div>
+  <article class="class-card"><p class="eyebrow">YOUR FIRST-DAY CLASSROOM</p><div id="classCode" class="code">L/CAIT/PS/405</div><div class="destination"><span id="subject">CAIT Subject</span><span id="professor">PS Professor</span><span id="floor">4th Floor</span><span id="room">Room 405</span></div><a class="primary" href="#finder">Show Me How to Reach →</a></article>
+</section>
+
+<section class="section"><article class="message"><div class="envelope">✉</div><div><p class="eyebrow">A MESSAGE FOR OUR JUNIORS</p><h2>Welcome to a new chapter.</h2><p>New classrooms, new faces, and a completely new environment can feel confusing on the first day. Junior's Help Desk helps you decode your classroom location and confidently find your way.</p><strong>With best wishes,<br>Your Seniors</strong></div></article></section>
+
+<section class="section decoder"><p class="eyebrow">CLASSROOM CODE GUIDE</p><h2>Confused by Your Classroom Code?</h2><p>Your timetable tells you where to go. You just need to know how to read it.</p>
+<div class="big-code">L <i>/</i> CAIT <i>/</i> PS <i>/</i> 405</div>
+<div class="decode-grid"><article><b>L</b><span>Lecture</span></article><article><b>CAIT</b><span>Subject abbreviation</span></article><article><b>PS</b><span>Professor abbreviation</span></article><article><b>405</b><span>Room 405 • 4th Floor</span></article></div>
+<div class="path"><strong>Your destination</strong><span>University Building</span><b>→</b><span>4th Floor</span><b>→</b><span>Room 405</span></div></section>
+
+<section id="finder" class="section"><p class="eyebrow">QUICK NAVIGATION</p><h2>Find My Classroom</h2><p>Enter the classroom code from your timetable.</p>
+<div class="finder"><input id="roomInput" placeholder="e.g. L/CAIT/PS/405"><button id="findBtn" class="primary">Find My Room</button></div><div id="routeResult"></div></section>
+
+<section id="building" class="section"><p class="eyebrow">BUILDING EXPLORER</p><h2>Explore Your University Building</h2>
+<div id="floorTabs" class="tabs"></div><div id="floorContent" class="location-grid"></div></section>
+
+<section id="places" class="section"><p class="eyebrow">CAMPUS ESSENTIALS</p><h2>Important Places You Should Know</h2><div id="placesGrid" class="location-grid"></div></section>
+
+<section class="stats section"><article><b>8</b><span>FLOOR LEVELS</span></article><article><b>3</b><span>MAIN WINGS</span></article><article><b>4</b><span>LIFTS</span></article><article><b>2</b><span>STAIRCASES</span></article></section>
+
+<section id="about" class="section split"><div><p class="eyebrow">ABOUT THE PROJECT</p><h2>Built to Make the First Day Simpler</h2></div><div><p>Junior's Help Desk is a student-created prototype designed to help first-year students navigate the university building on their first day. Scan, log in, understand your classroom code, and find important locations.</p><p class="notice">This prototype is a navigation assistance concept and does not replace official university notices or information systems.</p></div></section>
+
+<section id="makers" class="section"><p class="eyebrow">THE TEAM</p><h2>Meet the Makers</h2><div class="maker-grid"><article><div class="avatar">M1</div><h3>Maker One</h3><p>Frontend Development • UI/UX Design • Project Planning</p><a href="#">Portfolio ↗</a></article><article><div class="avatar">M2</div><h3>Maker Two</h3><p>Backend Development • Database Management • System Architecture</p><a href="#">Portfolio ↗</a></article></div></section>
+
+<section class="section feedback"><p class="eyebrow">YOUR FEEDBACK</p><h2>How was your experience?</h2><div id="stars" class="stars"><button>★</button><button>★</button><button>★</button><button>★</button><button>★</button></div><p id="feedbackText">Tap a star to rate this prototype.</p></section>
+</main>
+<footer><div><h3>Junior's Help Desk</h3><p>Helping juniors find their way from day one.</p></div><p>Made by seniors, for juniors. • <span id="year"></span></p></footer>
+<script src="data.js"></script><script src="dashboard.js"></script>
+</body></html>
