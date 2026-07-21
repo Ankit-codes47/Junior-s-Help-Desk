@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Teacher Login | Junior's Help Desk
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="teacher-login.css"
+    >
+</head>
+
+<body>
+
+    <main class="teacher-login-page">
+
+        <!-- Background Overlay -->
+
+        <div class="overlay"></div>
+
+
+        <!-- Login Card -->
+
+        <section class="teacher-login-card">
+
+            <!-- University Logo -->
+
+            <div class="logo">
+                BBDU
+            </div>
+
+
+            <!-- University Name -->
+
+            <p class="university-name">
+                Babu Banarasi Das University
+            </p>
+
+
+            <!-- Admin Label -->
+
+            <span class="admin-badge">
+                TEACHER / ADMIN ACCESS
+            </span>
+
+
+            <!-- Heading -->
+
+            <h1>
+                Management Login
+            </h1>
+
+
+            <p class="tagline">
+                Access and manage the Junior's Help Desk prototype.
+            </p>
+
+
+            <!-- Login Form -->
+
+            <form id="teacherLoginForm">
+
+
+                <!-- Staff ID -->
+
+                <label for="staffId">
+
+                    Staff ID / Email
+
+                    <input
+                        type="text"
+                        id="staffId"
+                        placeholder="Enter your Staff ID or email"
+                        autocomplete="username"
+                        required
+                    >
+
+                </label>
+
+
+                <!-- Password -->
+
+                <label for="password">
+
+                    Password
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-toggle"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </label>
+
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    id="teacherLoginBtn"
+                    class="login-button"
+                >
+
+                    Access Management Panel →
+
+                </button>
+
+
+                <!-- Error Message -->
+
+                <p
+                    id="teacherLoginError"
+                    class="error"
+                    aria-live="polite"
+                ></p>
+
+
+            </form>
+
+
+            <!-- Demo Credentials -->
+
+            <div class="demo-box">
+
+                <p>
+                    <strong>
+                        Prototype Login
+                    </strong>
+                </p>
+
+                <p>
+                    Staff ID:
+                    <b>admin@bbdu.ac.in</b>
+                </p>
+
+                <p>
+                    Password:
+                    <b>admin123</b>
+                </p>
+
+            </div>
+
+
+            <!-- Student Login -->
+
+            <a
+                href="index.html"
+                class="student-link"
+            >
+
+                ← Back to Student Login
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="teacher-footer">
+
+        <p>
+            © 2026 Junior's Help Desk
+            <span>•</span>
+            Teacher Management Prototype
+        </p>
+
+        <p class="footer-note">
+            A student-created prototype for first-day campus assistance.
+        </p>
+
+    </footer>
+
+
+    <script src="teacher-login.js"></script>
+
+</body>
+
+</html>
