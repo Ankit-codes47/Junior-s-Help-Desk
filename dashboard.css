@@ -215,3 +215,424 @@ body{
     border-radius:18px;
     padding:24px
 }
+/* =========================================
+   RESPONSIVE DESIGN - TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .nav {
+        padding: 14px 4%;
+        gap: 15px;
+    }
+
+    .nav nav {
+        gap: 14px;
+    }
+
+    .nav nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .class-card {
+        max-width: 650px;
+        width: 100%;
+    }
+
+    .decode-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .section {
+        width: 92%;
+        padding: 60px 0;
+    }
+
+
+    /* NAVIGATION */
+
+    .nav {
+        padding: 12px 4%;
+    }
+
+    .nav nav {
+        display: none;
+    }
+
+    .brand {
+        margin-right: auto;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+
+    /* STUDENT PROFILE */
+
+    .profile {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* CLASSROOM CARD */
+
+    .class-card {
+        padding: 24px;
+    }
+
+    .code {
+        font-size: 27px;
+    }
+
+    .destination {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* GREETING MESSAGE */
+
+    .message {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 25px;
+    }
+
+
+    /* CLASS CODE */
+
+    .big-code {
+        font-size: 45px;
+
+        word-break: break-word;
+    }
+
+    .decode-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ROUTE */
+
+    .path {
+        gap: 12px;
+    }
+
+
+    /* FIND CLASSROOM */
+
+    .finder {
+        flex-direction: column;
+    }
+
+    .finder input {
+        width: 100%;
+    }
+
+    .finder .primary {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* FLOOR EXPLORER */
+
+    .location-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ABOUT */
+
+    .split {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* MAKERS */
+
+    .maker-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN - SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .section {
+        width: 92%;
+
+        padding: 50px 0;
+    }
+
+
+    /* HEADER */
+
+    .brand-logo {
+        width: 34px;
+
+        height: 34px;
+    }
+
+    .brand span:last-child {
+        font-size: 13px;
+    }
+
+    .ghost {
+        padding: 9px 11px;
+
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        line-height: 1.05;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+
+    /* STUDENT DETAILS */
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CLASSROOM */
+
+    .class-card {
+        padding: 20px;
+    }
+
+    .code {
+        font-size: 24px;
+    }
+
+    .destination {
+        grid-template-columns: 1fr;
+    }
+
+    .primary {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* MESSAGE */
+
+    .message {
+        padding: 20px;
+    }
+
+    .envelope {
+        font-size: 40px;
+    }
+
+
+    /* HEADINGS */
+
+    .message h2,
+    .section h2 {
+        font-size: 32px;
+    }
+
+
+    /* CLASS CODE */
+
+    .big-code {
+        font-size: 34px;
+
+        margin: 30px 0;
+    }
+
+    .decode-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* DESTINATION PATH */
+
+    .path {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .path b {
+        transform: rotate(90deg);
+    }
+
+
+    /* FLOOR TABS */
+
+    .tabs {
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding-bottom: 10px;
+
+        scrollbar-width: thin;
+    }
+
+    .tabs button {
+        flex-shrink: 0;
+    }
+
+
+    /* LOCATIONS */
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* STATISTICS */
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats article {
+        padding: 20px 10px;
+    }
+
+    .stats b {
+        font-size: 34px;
+    }
+
+
+    /* MAKERS */
+
+    .maker-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FEEDBACK STARS */
+
+    .stars {
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .stars button {
+        font-size: 34px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 35px 5%;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL DEVICES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .big-code {
+        font-size: 28px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .brand span:last-child {
+        display: none;
+    }
+
+}

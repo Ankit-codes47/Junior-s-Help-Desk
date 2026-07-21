@@ -95,22 +95,323 @@ th,td{
     color:#a22;
     border-color:#eed
 }
-@media(max-width:850px)
-{
-    body{
-        display:block
+
+/* =========================================
+   TABLET - 1000px
+========================================= */
+
+@media (max-width: 1000px) {
+
+    body {
+        grid-template-columns: 200px 1fr;
     }
-    aside{
-        position:static;
-        height:auto
+
+    aside {
+        padding: 25px 20px;
     }
-    main{
-        padding:25px
+
+    main {
+        padding: 40px 30px;
     }
-    .stats,.cards{
-        grid-template-columns:1fr
+
+    h1 {
+        font-size: 40px;
     }
-    form{
-        grid-template-columns:1fr
+
+    form {
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    form button {
+        grid-column: 1 / -1;
+    }
+
+    .stats,
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   TABLET / MOBILE - 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        display: block;
+    }
+
+
+    /* SIDEBAR */
+
+    aside {
+        position: relative;
+
+        top: auto;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+    }
+
+    aside h2 {
+        margin-top: 0;
+    }
+
+    aside p {
+        margin-bottom: 15px;
+    }
+
+    aside a {
+        display: inline-block;
+
+        margin-right: 18px;
+
+        padding: 8px 0;
+
+        font-size: 13px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    main {
+        max-width: 100%;
+
+        padding: 35px 20px;
+    }
+
+
+    /* HEADINGS */
+
+    h1 {
+        font-size: 36px;
+    }
+
+    section {
+        margin-bottom: 55px;
+    }
+
+
+    /* STATISTICS */
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* LOCATION CARDS */
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* STUDENT FORM */
+
+    form {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    form button {
+        grid-column:
+            1 / -1;
+    }
+
+
+    /* TABLE */
+
+    .table-wrap {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE - 500px
+========================================= */
+
+@media (max-width: 500px) {
+
+    /* SIDEBAR / TOP NAV */
+
+    aside {
+        padding: 18px 16px;
+    }
+
+    aside h2 {
+        font-size: 20px;
+
+        margin-bottom: 5px;
+    }
+
+    aside p {
+        font-size: 12px;
+    }
+
+    aside a {
+        display: block;
+
+        margin: 0;
+
+        padding: 8px 0;
+    }
+
+
+    /* MAIN */
+
+    main {
+        padding: 30px 15px;
+    }
+
+
+    /* HEADING */
+
+    h1 {
+        font-size: 31px;
+
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+
+    /* SECTIONS */
+
+    section {
+        margin-bottom: 45px;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stats article {
+        padding: 20px;
+    }
+
+    .stats b {
+        font-size: 34px;
+    }
+
+
+    /* STUDENT FORM */
+
+    form {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    form button {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+
+    /* INPUTS */
+
+    input {
+        width: 100%;
+
+        font-size: 14px;
+    }
+
+
+    /* TABLE */
+
+    .table-wrap {
+        border-radius: 10px;
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling:
+            touch;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+
+
+    /* DELETE BUTTON */
+
+    .delete {
+        padding: 8px 10px;
+
+        font-size: 11px;
+    }
+
+
+    /* LOCATION CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards article {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE - 360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    main {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    aside {
+        padding: 16px 14px;
+    }
+
+    .stats article,
+    .cards article {
+        padding: 17px;
+    }
+
+    input,
+    button {
+        padding: 11px;
+    }
+
 }

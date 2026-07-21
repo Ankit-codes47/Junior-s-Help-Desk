@@ -447,48 +447,6 @@ button:disabled {
 
 }
 
-
-/* ================================
-   MOBILE RESPONSIVE
-================================ */
-
-@media (max-width: 500px) {
-
-    .login-page {
-
-        padding: 18px;
-
-
-        background-attachment:
-            scroll;
-
-    }
-
-
-    .login-card {
-
-        padding:
-
-            30px
-            22px;
-
-    }
-
-
-    .university-name {
-
-        font-size: 16px;
-
-    }
-
-
-    .login-card h1 {
-
-        font-size: 32px;
-
-    }
-
-}
 /* ================================
    LOGIN FOOTER
 ================================ */
@@ -530,4 +488,254 @@ button:disabled {
 
 .teacher-access a:hover {
     text-decoration: underline;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        padding: 30px 20px;
+        background-attachment: scroll;
+    }
+
+    .login-card {
+        max-width: 420px;
+        padding: 34px 30px;
+    }
+
+    .login-card h1 {
+        font-size: 35px;
+    }
+
+    .university-name {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .login-page {
+        min-height: calc(100vh - 100px);
+
+        padding: 30px 16px;
+
+        background-attachment: scroll;
+
+        background-position: center;
+    }
+
+
+    /* LOGIN CARD */
+
+    .login-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 28px 20px;
+
+        border-radius: 18px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        width: 70px;
+
+        height: 52px;
+
+        margin-bottom: 16px;
+
+        border-radius: 13px;
+
+        font-size: 20px;
+    }
+
+
+    /* UNIVERSITY */
+
+    .university-name {
+        font-size: 15px;
+
+        line-height: 1.4;
+    }
+
+
+    /* PROJECT TITLE */
+
+    .login-card h1 {
+        font-size: 30px;
+
+        line-height: 1.1;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    /* TAGLINE */
+
+    .tagline {
+        margin-bottom: 24px;
+
+        font-size: 14px;
+    }
+
+
+    /* FORM */
+
+    label {
+        margin: 16px 0;
+
+        font-size: 12px;
+    }
+
+
+    /* INPUT */
+
+    input {
+        padding: 14px;
+
+        font-size: 14px;
+    }
+
+
+    /* LOGIN BUTTON */
+
+    button {
+        padding: 15px 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* PROTOTYPE HINT */
+
+    .hint {
+        margin-top: 16px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+
+    /* FOOTER */
+
+    .login-footer {
+        min-height: 100px;
+
+        padding: 16px 15px;
+    }
+
+    .login-footer p {
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+
+    /* TEACHER ACCESS */
+
+    .teacher-access {
+        margin-top: 10px;
+    }
+
+    .teacher-access a {
+        display: inline-block;
+
+        margin-top: 3px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .login-page {
+        padding: 20px 12px;
+    }
+
+    .login-card {
+        padding: 24px 17px;
+    }
+
+    .logo {
+        width: 65px;
+
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+    .university-name {
+        font-size: 14px;
+    }
+
+    .login-card h1 {
+        font-size: 27px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 13px;
+    }
+
+    button {
+        padding: 14px 10px;
+    }
+
+}
+
+
+/* =========================================
+   SHORT HEIGHT DEVICES
+========================================= */
+
+@media (max-height: 700px) and (min-width: 501px) {
+
+    .login-page {
+        padding-top: 30px;
+
+        padding-bottom: 30px;
+    }
+
+    .login-card {
+        padding: 28px 32px;
+    }
+
+    .logo {
+        height: 50px;
+
+        margin-bottom: 12px;
+    }
+
+    .tagline {
+        margin-bottom: 18px;
+    }
+
+    label {
+        margin: 13px 0;
+    }
+
+    .hint {
+        margin-top: 12px;
+    }
+
 }
