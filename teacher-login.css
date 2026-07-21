@@ -707,12 +707,45 @@ input:focus {
 }
 
 
+
 /* ================================
    MOBILE
 ================================ */
 
 @media (
     max-width: 500px
+) {
+
+    .teacher-login-card {
+
+        padding:
+
+            30px
+            22px;
+
+    }
+
+
+    .teacher-login-card h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .university-name {
+
+        font-size: 16px;
+
+    }
+
+}
+/* ================================
+   Desktop
+================================ */
+
+@media (
+    max-width: 1200px
 ) {
 
     .teacher-login-card {

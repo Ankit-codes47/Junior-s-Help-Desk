@@ -1,10 +1,74 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prototype Admin</title><link rel="stylesheet" href="admin.css"></head>
-<body><aside><button
-    id="adminLogout"
-    class="logout-button"
->
-    Logout
-</button><h2>JHD Admin</h2><p>Prototype Panel</p><a href="#overview">Overview</a><a href="#students">Students</a><a href="#locations">Locations</a><a href="index.html">Student Login ↗</a></aside>
-<main><section id="overview"><p class="eyebrow">ADMIN PROTOTYPE</p><h1>Dashboard Overview</h1><div class="stats"><article><b id="studentCount">0</b><span>Students</span></article><article><b>8</b><span>Floor Levels</span></article><article><b id="placeCount">0</b><span>Important Places</span></article></div></section>
-<section id="students"><h2>Student Records</h2><form id="studentForm"><input id="sName" placeholder="Full name" required><input id="sMobile" placeholder="Mobile" required><input id="sBranch" placeholder="Branch" required><input id="sSection" placeholder="Section" required><input id="sCode" placeholder="Class code" value="L/CAIT/PS/405" required><button>Add Student</button></form><div class="table-wrap"><table><thead><tr><th>Name</th><th>Mobile</th><th>Branch</th><th>Section</th><th>Class</th><th></th></tr></thead><tbody id="studentRows"></tbody></table></div></section>
-<section id="locations"><h2>Important Locations</h2><div id="adminPlaces" class="cards"></div></section></main><script src="data.js"></script><script src="admin.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prototype Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <aside>
+        <button
+            id="adminLogout"
+            class="logout-button"
+        >
+            Logout
+        </button>
+        <h2>JHD Admin</h2>
+        <p>Prototype Panel</p>
+        <a href="#overview">Overview</a>
+        <a href="#students">Students</a>
+        <a href="#locations">Locations</a>
+        <a href="index.html">Student Login ↗</a>
+    </aside>
+<main>
+    <section id="overview">
+        <p class="eyebrow">ADMIN PROTOTYPE</p>
+        <h1>Dashboard Overview</h1>
+        <div class="stats">
+            <article><b id="studentCount">0</b>
+                <span>Students</span>
+            </article>
+            <article><b>8</b>
+                <span>Floor Levels</span>
+            </article>
+            <article>
+                <b id="placeCount">0</b>
+                <span>Important Places</span>
+            </article>
+        </div>
+    </section>
+    <section id="students">
+        <h2>Student Records</h2>
+        <form id="studentForm">
+            <input id="sName" placeholder="Full name" required>
+            <input id="sMobile" placeholder="Mobile" required>
+            <input id="sBranch" placeholder="Branch" required>
+            <input id="sSection" placeholder="Section" required>
+            <input id="sCode" placeholder="Class code" value="L/CAIT/PS/405" required>
+            <button>Add Student</button>
+        </form>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Branch</th>
+                        <th>Section</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="studentRows"></tbody>
+            </table>
+        </div>
+    </section>
+    <section id="locations">
+        <h2>Important Locations</h2>
+        <div id="adminPlaces" class="cards"></div>
+    </section>
+</main>
+<script src="data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
