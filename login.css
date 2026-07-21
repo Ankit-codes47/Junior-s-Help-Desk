@@ -518,3 +518,16 @@ button:disabled {
 .footer-note {
     color: rgba(255, 255, 255, 0.55);
 }
+.teacher-access {
+    margin-top: 8px;
+}
+
+.teacher-access a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.teacher-access a:hover {
+    text-decoration: underline;
+}
